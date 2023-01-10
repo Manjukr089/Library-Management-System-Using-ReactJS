@@ -1,0 +1,72 @@
+.AdminLogin
+{
+  /* background-image: url('https://images5.alphacoders.com/394/394862.jpg'); */
+  background-image: url('C:\Users\manju\OneDrive\Desktop\react\Library\public\images\book1.jpg');
+  background-position: center;
+  /* background-size: cover; */
+  height: 100vh;
+  padding: 100px;
+}
+body {
+  /* display: grid; */
+  /* height: 100vh; */
+  /* place-items: center; */
+  font-family: "Nunito Sans", sans-serif;
+}
+.form_input form {
+  margin: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  padding-block: 24px;
+  border-radius: 20px;
+  background-image: url('C:\Users\manju\OneDrive\Desktop\react\Library\public\images\book2.jpg');
+  
+  height: 250px;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.form_input input {
+  
+  border: none;
+  height: 32px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #f1f4fa, #cbcdd3);
+  outline: none;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.form_input input[type="email"],
+.form_input input[type="password"] {
+  padding-inline: 20px;
+  height: 49px;
+  width: 90%;
+}
+.form_input button{
+  cursor: pointer;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  height: 50px;
+  font-size: 1rem;
+  border: none;
+  background-color:hsl(0, 2%, 69%,0.9);
+  color: #0c0c0c;
+  position: relative;
+  /* z-index: 100; */
+  width: 100%;
+  border-radius: 10px;
+}
+
+.form_input #button {
+  width: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_input{
+   margin-left: 100px;
+}

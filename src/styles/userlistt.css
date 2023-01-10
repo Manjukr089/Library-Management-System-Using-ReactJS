@@ -1,0 +1,13 @@
+.userList{
+    background-color: white;
+    margin-top: -25px;
+    height: 800px;
+}
+.user-section{
+    border: 1px solid black;
+    width: 400px;
+    margin: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+.LandingPage{
+    background-image: url('C:\Users\manju\OneDrive\Desktop\react\Library\public\images\background2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 90px;
+}
+.selectLoginType h2 {
+    color:black;
+    font-size: 30px;
+    margin-top: -110px;
+    padding-top: 10px;
+    /* color: #999; */
+}
+
+.selectLoginType {
+    /* align-items:flex-start; */
+    text-align: center;
+    
+    margin: 70px 400px;
+    /* margin-top:70px;
+    margin-left: 400px; */
+    /* background: rgba(0, 0, 255, 0.75); */
+        /* background: rgb(25, 91, 212); */
+    
+    height: 400px;
+    width: 600px;
+    background-color:hsl(0, 2%, 69%,0.6);
+    padding-block: 24px; 
+    border-radius: 20px;
+    box-shadow: var(--primary-box-shadow);  
+}
+
+.selectLoginType a {
+    background-color: brown;
+    padding: 20px;
+    margin: 50px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.selectLoginType a:hover{
+    background-color: green;
+}
+
+.selectLoginType img {
+    height: 100px;
+    width: 100px;
+    /* margin-left: 80px; */
+    margin: 69px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    border-radius: 50%;
+}

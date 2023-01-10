@@ -1,0 +1,46 @@
+body{
+    background-image: url('C:\Users\manju\OneDrive\Desktop\react\Library\public\images\background2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.addBook{
+    background-color:rgb(69, 71, 71);
+    margin: 20px 400px;
+    padding: 20px;
+    /* background-image: url('C:\Users\manju\OneDrive\Desktop\react\Library\public\images\book.jpg'); */
+    opacity: 0.8;
+    border-radius: 20px;
+}
+.addBook h1{
+    text-align: center;
+    color: aliceblue;
+
+}
+.form{
+    margin: 30px 50px;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+.form input,textarea, button{
+    font-size: 1em;
+    opacity: 1;
+    color: black;
+    width: 560px;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 10px;
+    /* justify-content: center; */
+}
+.form button{
+    width: 200px;
+    height: 40px;
+    margin: 10px 150px 0px;
+    background-color: red;
+    color: aliceblue;
+    /* text-align: center; */
+    /* justify-content: center; */
+}
+.form button:hover{
+    background-color: green;
+    color: aliceblue;
+}

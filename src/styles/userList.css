@@ -1,0 +1,71 @@
+.userList {
+    /* background-color:aquamarine; */
+    background-image: url(C:\Users\manju\OneDrive\Desktop\react\Library\public\images\background1.png);
+    background-position: center;
+    padding: 10px;
+}
+.userList h1{
+    /* text-align: center; */
+    color:aquamarine;
+    display: inline-block;
+    background-color:black;
+    margin-left: 600px;
+    padding: 10px;
+    justify-content: center;
+}
+.user-section{
+    background-color: rgb(182, 176, 176,0.6);
+    padding: 10px;
+    width: 90%;
+    margin: 0px 200px 0px 80px;
+    border-radius: 10px;
+}
+.user-card {
+    background-color: rgba(143, 161, 166, 0.7);
+    padding-top: 0px;
+    margin: 20px 10px 0px 70px;
+    height: 180px;
+    width: 90%;
+    border-radius: 20px ;
+/* text-align: left; */
+}
+.user-card h1,h2 {
+    margin-left: 180px;
+    padding: 1px;
+    position: relative;
+    bottom: 190px;
+    /* justify-content: left; */
+    text-align: left;
+    /* align-items: flex-end; */
+
+}
+/* .book-card h5{
+    position: relative;
+    margin-left: 200px;
+    bottom: 10px;
+    text-align:left;
+} */
+/* .book-body{
+    margin-top: -160px;
+    margin-left: 200px;
+
+} */
+.user-card img{
+    /* position:static; */
+    width: 100px;
+    justify-content: left;
+    margin:25px 10px;
+}
+.btn button{
+    /* align-items: center;
+    margin-bottom: 600px;
+    margin-left: 600px;
+    */
+    width: 100px;
+    position: relative;
+    left: 1000px;
+    bottom: 300px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: blue;
+}
