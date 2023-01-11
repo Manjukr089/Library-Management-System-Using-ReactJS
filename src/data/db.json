@@ -6857,48 +6857,8 @@
     }
   ],
   "users": [
-    {
-      "name": "",
-      "age": "",
-      "email": "",
-      "phoneNumber": "",
-      "id": "1"
-    },
-    {
-      "name": "",
-      "age": "",
-      "email": "",
-      "phoneNumber": "",
-      "id": "2"
-    },
-    {
-      "name": "",
-      "age": "",
-      "email": "",
-      "phoneNumber": "",
-      "id": "3"
-    },
-    {
-      "name": "",
-      "age": "",
-      "email": "",
-      "phoneNumber": "",
-      "id": "4"
-    },
-    {
-      "name": "",
-      "age": "",
-      "email": "",
-      "phoneNumber": "",
-      "id": "5"
-    },
-    {
-      "name": "",
-      "age": "",
-      "email": "",
-      "phoneNumber": "",
-      "id": "6"
-    },
+    
+    
     {
       "name": "manju",
       "age": "44",

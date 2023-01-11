@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import '../styles/bookList.css'
-import ReadBook from "./readBook";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 const BookList = () => {
 
     let [books, setBooks] = useState([])
@@ -15,22 +14,28 @@ const BookList = () => {
     }, [books])
 
     //delete a books from server
-    let handleDelete = (title,id) => {
-        fetch(`http://localhost:5000/books/${id}`,{
+    let handleDelete = (title, id) => {
+        fetch(`http://localhost:5000/books/${id}`, {
             method: 'DELETE'
         });
         alert(`${title} has been deleted`)
     }
 
     let navigate = useNavigate()
-    let handleRead = (title,id) =>
-    {
+    let handleRead = (title, id) => {
 
-        navigate(`/admin/book-List/${id}`)
         alert(`${title} book is ready to read`)
-        
+        if(location.pathname == '/admin/book-List')
+        {
+            navigate(`/admin/book-List/${id}`)
+        }
+        else
+        {
+            navigate(`/user/book-List/${id}`)
+        }
+
     }
-    
+    let location = useLocation()
     return (
         <div className="bookList">
             <div className="book-title">
@@ -41,15 +46,16 @@ const BookList = () => {
                     <div className="book-card">
                         <img src={data.thumbnailUrl} alt="" />
                         {/* <div className="book-body"> */}
-                            <h1>Title:{data.title}</h1>
-                            <h3>Authors:{data.authors}</h3>
-                            <h5>PageCount:{data.pageCount}</h5>
-                            <h5>Categories:{data.categories}</h5>
-                            <div className="btn">
-                            <button onClick={ () => handleRead(data.title,data.id) }>Read More</button><br /><br />
-                            <button onClick={() => handleDelete(data.title,data.id)}>Delete</button>
-                            </div>
+                        <h1>Title:{data.title}</h1>
+                        <h3>Authors:{data.authors}</h3>
+                        <h5>PageCount:{data.pageCount}</h5>
+                        <h5>Categories:{data.categories}</h5>
+                        {/* <div className="btn"> */}
+                            <button onClick={() => handleRead(data.title, data.id)}>Read More</button><br /><br />
+                            {location.pathname == '/admin/book-List' && <button onClick={() => handleDelete(data.title, data.id)}>Delete</button>
+                            }
                         </div>
+                    // </div>
                     // </div>
                 ))}
                 {/* <ReadBook read={handleRead} /> */}

@@ -22,7 +22,7 @@ const AddUser = () => {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(bookData)
             })
-        alert(`add success`)
+        alert(`${name} added successfully`)
         navigate('/admin/user-list')
     }
     return (
@@ -43,7 +43,7 @@ const AddUser = () => {
                         <input className="form-control" type="text" minLength='10' value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} required placeholder="Enter the phone number of the user" />
                     </div>
                     
-                    <button className="btn btn-sucess" type="submit">Add Book</button>
+                    <button id='btn' type="submit">Add Book</button>
                 </form>
             </div>
         </div>

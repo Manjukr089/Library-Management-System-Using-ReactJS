@@ -1,5 +1,4 @@
 .bookList {
-    /* background-color:aquamarine; */
     background-image: url(C:\Users\manju\OneDrive\Desktop\react\Library\public\images\background1.png);
     background-position: center;
     padding: 10px;
@@ -56,15 +55,15 @@
     justify-content: left;
     margin:25px 10px;
 }
-.btn button{
+.book-card button{
     /* align-items: center;
     margin-bottom: 600px;
     margin-left: 600px;
     */
-    width: 100px;
+    width: 150px;
     position: relative;
     left: 1000px;
-    bottom: 300px;
+    bottom: 330px;
     border-radius: 10px;
     color: aliceblue;
     background-color: blue;
